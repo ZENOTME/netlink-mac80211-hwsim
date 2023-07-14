@@ -1,0 +1,19 @@
+[package]
+name = "mac80211_hwsim"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+anyhow = "1.0.42"
+netlink-packet-core = "0.5.0"
+netlink-packet-generic = "0.3.2"
+netlink-packet-utils = "0.5.2"
+casey = "0.4.0"
+paste = "1.0.13"
+message_macro = { path = "macro" }
+
+[[bin]]
+name = "main"
+path = "example/main.rs"
